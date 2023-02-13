@@ -1,12 +1,8 @@
-N = 4
+N = 5
 
 
-def main(n: int) -> None:
-    i = 1
-    summ = 0
-    for el in range(1, n + 1):
-        summ += n ** i
-        i += 1
+def main(n: int) -> int:
+    summ = n + n * n + n * n * n
     print(f'сумма для N = {N}: {summ}')
 
 
