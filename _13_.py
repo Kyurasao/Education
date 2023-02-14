@@ -1,7 +1,7 @@
 N = 6
 
 
-def main(n: int) -> int:
+def main(n: int) -> None:
     print(f'сумма для N = {n}: {n + n * n + n * n * n}')
 
 
