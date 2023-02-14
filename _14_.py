@@ -4,7 +4,7 @@ N = [[1, 2, 3, 4, 230, 5, 6, 238, 23, 7, 8, 9, 10], [1, 2, 3, 4, 230, 5, 6, 238,
 def main() -> None:
     for elem in N:
         res = []
-        if 237 in elem:
+        if 237 in elem: # << что будет если в списке нет элемента 237?
             for el in elem[:elem.index(237)]:
                 if el % 2 == 0:
                     res.append(el)
