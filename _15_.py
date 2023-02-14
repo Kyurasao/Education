@@ -11,5 +11,6 @@ def main():
             print(f'список FIRST после удаления - {FIRST}')
     print(f'список FIRST - результат - {FIRST}')
 
+
 if __name__ == '__main__':
     main()
