@@ -2,8 +2,7 @@ N = 5
 
 
 def main(n: int) -> int:
-    summ = n + n * n + n * n * n
-    print(f'сумма для N = {N}: {summ}')
+    print(f'сумма для N = {N}: {n + n * n + n * n * n}')
 
 
 if __name__ == '__main__':
