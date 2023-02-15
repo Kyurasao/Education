@@ -2,15 +2,25 @@ NAME = [
     'aSd.Fgh.jkL.qgE',
     'aSd.jfgtyD',
     'aSd.Fgh.jkL.qwE..',
+    'aSd.Fgh.jkL.qwE!',
     'aSd.Fgh.jkL.qwEф',
     'aSdFghjkLqwE',
     ''
 ]
+LATIN_CHAR = 'qwertyuiopasdfghjklzxcvbnm'
 
 
-def main():     # нужно ли тут указывать тип данных результата??????????
+def ext_is_good(s: str) -> bool:
+    if '.' in s and s.rfind('.') + 1 != len(s):
+        for el in s[s.rfind('.') + 1:].lower():
+            if el not in LATIN_CHAR:
+                return False
+        return True
+
+
+def main() -> None:
     for el in NAME:
-        if '.' in el and len(el) != el.rfind('.') + 1 and el[el.rfind('.') + 1:].isalpha(): # что делает len(el) != el.rfind('.') + 1?
+        if ext_is_good(el):
             print(f'имя файла - "{el}"; расширение файла - {el[el.rfind(".") + 1:]}')
         else:
             print(f'"{el}" - некорректное имя файла')
