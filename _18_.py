@@ -8,3 +8,4 @@ def main(string, s: str) -> None:
 
 if __name__ == '__main__':
     main(STRING, S)
+    # принято
