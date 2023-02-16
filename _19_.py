@@ -10,3 +10,4 @@ def main(var_1, var_2) -> None:
 
 if __name__ == '__main__':
     main(VAR_1, VAR_2)
+    # принято
