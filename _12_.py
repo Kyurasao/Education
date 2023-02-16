@@ -11,7 +11,7 @@ LATIN_CHAR = 'qwertyuiopasdfghjklzxcvbnm'
 
 
 def ext_is_good(s: str) -> bool:
-    if '.' in s and s.rfind('.') + 1 != len(s):
+    if '.' in s and s[-1] != '.':
         for el in s[s.rfind('.') + 1:].lower():
             if el not in LATIN_CHAR:
                 return False
