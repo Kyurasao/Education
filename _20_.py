@@ -1,0 +1,9 @@
+LIST_OF_NUMBERS = [1, 10, 30, 5, 45]
+
+
+def main(l_1: list) -> None:
+    print(f'элементы кратные 15: {list(filter(lambda x: (x % 15 == 0), l_1))}')
+
+
+if __name__ == '__main__':
+    main(LIST_OF_NUMBERS)
