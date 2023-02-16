@@ -12,7 +12,7 @@ def main(list_1: list) -> None:
         for el in seq:
             count += seq.count(el)
         print(f'числа последовательности "{seq}" {"уникальны" if count == len(seq) else "не уникальны"}')
-
+    # а какая структура данных хранит только уникальные символы?
 
 if __name__ == '__main__':
     main(LIST_OF_SEQUENCE)
