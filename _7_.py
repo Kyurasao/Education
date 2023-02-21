@@ -8,21 +8,21 @@ N = 10
 
 
 def main(n: int) -> None:
-    list1 = []
+    list_res = []
     for i in range(n):
         if i == 0:
-            list1.append([1])
-            print(list1)
+            list_res.append([1])
+            print(' '.join(map(str, list_res[i])).center(40))
         elif i == 1:
-            list1.append([1, 1])
-            print(list1)
-        elif i >= 2:
-            list_j = [1]
+            list_res.append([1, 1])
+            print(' '.join(map(str, list_res[i])).center(40))
+        else:
+            list_in = [1]
             for j in range(1, i):
-                list_j.append(list1[i - 1][j - 1] + list1[i - 1][j])
-            list_j.append(1)
-            list1.append(list_j)
-            print(list1)
+                list_in.append(list_res[i - 1][j - 1] + list_res[i - 1][j])
+            list_in.append(1)
+            list_res.append(list_in)
+            print(' '.join(map(str, list_res[i])).center(40))
 
 
 if __name__ == '__main__':
