@@ -5,7 +5,7 @@
 
 import os
 
-PATH = 'C:/Users/Антон/Documents/GitHub/Education'
+PATH = 'C:/Users/Антон/Documents/GitHub/Education' # а как вывести путь до текущего диалога?
 
 
 def main(string: str) -> None:
