@@ -70,15 +70,16 @@ def main(n):
     #         print(k, end=' ')
     #     print()
 
-    # 999999999999999999999999999999999999999999999999999999999999999999
-    # c = 11
+    # 9
+    # c = 0
     # for i in range(n):
-    #
+    #     l = []
     #     for j in range(i + 1):
-    #         c -= 1
-    #
-    #         print(c, end=' ')
-    #
+    #         c += 1
+    #         l.append(c)
+    #     l.reverse()
+    #     for k in range(i + 1):
+    #         print(l[k], end=' ')
     #     print()
 
     # 8
