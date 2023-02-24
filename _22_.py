@@ -35,3 +35,4 @@ def main(string: str) -> None:
 
 if __name__ == '__main__':
     main(TEXT)
+    # принято
