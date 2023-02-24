@@ -13,3 +13,4 @@ def main(list_1: list) -> None:
 
 if __name__ == '__main__':
     main(LIST_OF_SEQUENCE)
+    # принято
