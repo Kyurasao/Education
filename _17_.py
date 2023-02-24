@@ -7,3 +7,4 @@ def main(num: int) -> None:
 
 if __name__ == '__main__':
     main(NUM)
+    #принято
