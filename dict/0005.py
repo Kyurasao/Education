@@ -7,6 +7,7 @@
 """
 
 MY_DICT = {'first_one': 'we can do it'}
+D = {'a': 1, 'b': 2, 'c': 3}
 
 
 def biggest_dict(my: dict, **kwargs) -> dict:
@@ -15,7 +16,7 @@ def biggest_dict(my: dict, **kwargs) -> dict:
 
 
 def main() -> None:
-    print(biggest_dict(MY_DICT, a=1, b=2, c=3))
+    print(biggest_dict(MY_DICT, **D))
 
 
 if __name__ == '__main__':
