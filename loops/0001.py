@@ -7,11 +7,8 @@ LST = [x for x in range(-10, 10, 2)]
 
 
 def more_than_five(lst: list) -> list:
-    res_list = []
-    for i in lst:
-        if abs(i) > 5:
-            res_list.append(i)
-    return res_list
+    lst = [i for i in lst if abs(i) > 5]
+    return lst
 
 
 def main():
