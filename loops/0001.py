@@ -11,9 +11,9 @@ def more_than_five(lst: list) -> list:
     return lst
 
 
-def main():
-    print(more_than_five(LST))
+def main(lst: list) -> None:
+    print(more_than_five(lst))
 
 
 if __name__ == '__main__':
-    main()
+    main(LST)
