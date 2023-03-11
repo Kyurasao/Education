@@ -18,7 +18,8 @@ LETTERS = 'ЫгВЫоЯСремДШНККАыкЩЙФа'
 
 
 def main(string: str) -> None:
-    print(''.join([letter for letter in string if not letter.isupper()]))
+    print(f'Исходная строка: {string},\n'
+          f'После обработки: {"".join([letter for letter in string if not letter.isupper()])}')
 
 
 if __name__ == '__main__':

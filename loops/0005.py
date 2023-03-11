@@ -24,7 +24,7 @@ def all_divisors(number: int) -> list:
 
 def main(lst: list) -> None:
     res = [all_divisors(x) for x in lst]
-    print(res)
+    print(f'Список чисел: {lst},\nИх делители: {res}')
 
 
 if __name__ == '__main__':

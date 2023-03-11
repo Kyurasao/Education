@@ -11,8 +11,8 @@ def more_than_five(lst: list) -> list:
     return lst
 
 
-def main(lst: list) -> None:
-    print(more_than_five(lst))
+def main(x: list) -> None:
+    print(f'Исходный список: {x}\nРезультат функции: {more_than_five(x)}')
 
 
 if __name__ == '__main__':
