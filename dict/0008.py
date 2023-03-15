@@ -4,7 +4,7 @@
 Имеется ряд словарей с пересекающимися ключами (значения - положительные числа).
 Напишите 2 функции, которые делают с массивом словарей следующие операции:
 
-1-ая функция max_dct(dicts) формирует новый словарь по правилу:
+1-ая функция max_dct(*dicts) формирует новый словарь по правилу:
 Если в исходных словарях есть повторяющиеся ключи, выбираем среди их значений максимальное и присваиваем этому ключу
 (например, в словаре_1 есть ключ “а” со значением 5, и в словаре_2 есть ключ “а”, но со значением 9.
 Выбираем максимальное значение, т. е. 9, и присваиваем ключу “а” в уже новом словаре).
@@ -23,7 +23,7 @@ D_3 = {'a': 10, 'f': 11, 'h': 12}
 DICTS = D_1, D_2, D_3
 
 
-def max_dct(dicts) -> dict:
+def max_dct(*dicts) -> dict:
     new_dict = {}
     for el in dicts:
         for key in el:
@@ -35,20 +35,19 @@ def max_dct(dicts) -> dict:
     return new_dict
 
 
-def sum_dct(*dicts) -> dict:
+def sum_dct(dicts) -> dict:
     new_dict = {}
     for el in dicts:
-        for ell in el:
-            for key in ell:
-                if key in new_dict:
-                    new_dict[key] += ell[key]
-                else:
-                    new_dict[key] = ell[key]
+        for key in el:
+            if key in new_dict:
+                new_dict[key] += el[key]
+            else:
+                new_dict[key] = el[key]
     return new_dict
 
 
 def main() -> None:
-    print(f'1 функция max_dct {max_dct(DICTS)}')
+    print(f'1 функция max_dct {max_dct(D_1, D_2, D_3)}')
     print(f'2 функция sum_dct {sum_dct(DICTS)}')
 
 
