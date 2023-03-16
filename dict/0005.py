@@ -8,15 +8,19 @@
 
 MY_DICT = {'first_one': 'we can do it'}
 D = {'a': 1, 'b': 2, 'c': 3}
+С = {'g': 1, 'h': 2, 'l': 3}
 
 
-def biggest_dict(my: dict, **kwargs) -> dict:
-    my |= kwargs
-    return my
+def biggest_dict(**kwargs) -> None:
+    MY_DICT.update(kwargs)
 
+
+# КЛЮЧ + ЗНАЧЕНИЕ = KEY + WORD >> KEYWORD >> KW
 
 def main() -> None:
-    print(biggest_dict(MY_DICT, **D))
+    print(f'Словарь до объединения: {MY_DICT}')
+    biggest_dict(a=1, b=2, c=3, g=1, h=2, l='zikkurat')
+    print(f'Словарь после объединения: {MY_DICT}')
 
 
 if __name__ == '__main__':
